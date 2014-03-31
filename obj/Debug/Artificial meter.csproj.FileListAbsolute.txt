@@ -1,0 +1,9 @@
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\bin\Debug\Artificial meter.exe
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\bin\Debug\Artificial meter.pdb
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\obj\Debug\Artificial_meter.Form1.resources
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\obj\Debug\Artificial_meter.Properties.Resources.resources
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\obj\Debug\Artificial meter.csproj.GenerateResource.Cache
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\obj\Debug\Artificial meter.exe
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\obj\Debug\Artificial meter.pdb
+C:\Documents and Settings\ExSy\My Documents\Visual Studio 2008\Projects\Artificial meter\Artificial meter\obj\Debug\Artificial_meter.MLR.resources
