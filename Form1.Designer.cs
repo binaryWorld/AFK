@@ -66,6 +66,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -153,6 +155,7 @@
             this.excelFileToolStripMenuItem.Name = "excelFileToolStripMenuItem";
             this.excelFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.excelFileToolStripMenuItem.Text = "Excel file";
+            this.excelFileToolStripMenuItem.Click += new System.EventHandler(this.excelFileToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
             // 
@@ -167,13 +170,13 @@
             // pDFToolStripMenuItem
             // 
             this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
-            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.pDFToolStripMenuItem.Text = "PDF";
             // 
             // imageToolStripMenuItem
             // 
             this.imageToolStripMenuItem.Name = "imageToolStripMenuItem";
-            this.imageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.imageToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.imageToolStripMenuItem.Text = "Image";
             // 
             // toolStripSeparator2
@@ -221,7 +224,7 @@
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Text = "&Edit";
             // 
             // undoToolStripMenuItem
             // 
@@ -286,19 +289,19 @@
             // 
             this.trainToolStripMenuItem.Name = "trainToolStripMenuItem";
             this.trainToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
-            this.trainToolStripMenuItem.Text = "Train Correlation";
+            this.trainToolStripMenuItem.Text = "&Train Correlation";
             // 
             // editSensitivityToolStripMenuItem
             // 
             this.editSensitivityToolStripMenuItem.Name = "editSensitivityToolStripMenuItem";
             this.editSensitivityToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.editSensitivityToolStripMenuItem.Text = "Edit sensitivity";
+            this.editSensitivityToolStripMenuItem.Text = "E&dit sensitivity";
             // 
             // graphOptionsToolStripMenuItem
             // 
             this.graphOptionsToolStripMenuItem.Name = "graphOptionsToolStripMenuItem";
             this.graphOptionsToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.graphOptionsToolStripMenuItem.Text = "Graph options";
+            this.graphOptionsToolStripMenuItem.Text = "&Graph options";
             // 
             // windowToolStripMenuItem
             // 
@@ -313,18 +316,20 @@
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Text = "&Help";
             // 
             // helpContentsToolStripMenuItem
             // 
             this.helpContentsToolStripMenuItem.Name = "helpContentsToolStripMenuItem";
-            this.helpContentsToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.helpContentsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.helpContentsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.helpContentsToolStripMenuItem.Text = "Help contents";
+            this.helpContentsToolStripMenuItem.Click += new System.EventHandler(this.helpContentsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // statusStrip1
@@ -348,6 +353,15 @@
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Documents and Settings\\ExSy\\My Documents\\User documentation\\Artificial meter.c" +
+                "hm";
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // Form1
             // 
@@ -410,6 +424,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem windowToolStripMenuItem;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
