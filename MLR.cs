@@ -15,5 +15,7 @@ namespace Artificial_meter
         {
             InitializeComponent();
         }
+
+       
     }
 }
